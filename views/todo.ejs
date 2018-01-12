@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+  <% include ./partials/nav %>
+  </header>
+<center>
+  <h1>備忘錄</h1>
+</center>
+  <div class="form-group">
+      <form method='post' action="/todo">
+    標題:<input type="text" name="label"><br>
+    內容:<br>
+  <textarea class="form-control" rows="5"  cols="70%" name="comment"></textarea><br>
+   <input type="date"  value="2018-01-01" name="date"><br>
+    <input type="submit" name="submit" style="width:20%" value="確定">
+    </form>
+</div>
+
+</body>
+</html>
